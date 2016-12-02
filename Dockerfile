@@ -1,6 +1,7 @@
 FROM centos:6
 MAINTAINER Nick Hilhorst <nick.hilhorst@asr.nl>
 
+# We installeren alleen php en composer. Composer haalt runtime de andere dependencies op van packagist.org
 RUN yum update -y -q && \
     yum install -y -q php && \
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
