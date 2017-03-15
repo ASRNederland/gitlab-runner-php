@@ -1,4 +1,4 @@
-FROM centos:6
+FROM centos:7
 MAINTAINER Nick Hilhorst <nick.hilhorst@asr.nl>
 
 # We installeren alleen php en composer. Composer haalt runtime de andere dependencies op van packagist.org
